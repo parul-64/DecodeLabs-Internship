@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f7fb;
+  color: #222;
+}
+
+/* Header */
+header {
+  background: #1f2937;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  width: 90%;
+  margin: auto;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: #1f2937;
+  text-align: center;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links li {
+  padding: 15px 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.menu-toggle {
+  display: block;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+button {
+  padding: 12px 22px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* Common Sections */
+section {
+  padding: 60px 20px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1e3a8a;
+  font-size: 2rem;
+}
+
+/* About */
+.about article {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Services */
+.service-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card,
+.project-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover,
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3,
+.project-card h3 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+/* Projects Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Contact */
+.contact form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #2563eb;
+}
+
+/* Footer */
+footer {
+  background: #1f2937;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Dark Theme */
+.dark-mode {
+  background: #111827;
+  color: #f9fafb;
+}
+
+.dark-mode .about article,
+.dark-mode .card,
+.dark-mode .project-card {
+  background: #1f2937;
+  color: #f9fafb;
+}
+
+.dark-mode .hero {
+  background: linear-gradient(135deg, #111827, #1f2937);
+}
+
+.dark-mode section h2,
+.dark-mode .hero h2 {
+  color: #38bdf8;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .hero h2 {
+    font-size: 2.8rem;
+  }
+
+  .service-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card {
+    flex: 1;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    width: auto;
+    background: none;
+    gap: 25px;
+  }
+
+  .nav-links li {
+    padding: 0;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  section {
+    padding: 80px 10%;
+  }
+}

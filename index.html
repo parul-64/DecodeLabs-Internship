@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parul Sharma | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Parul Portfolio</h1>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="menu-toggle" id="menuToggle">
+                ☰
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Hello, I'm Parul 👋</h2>
+                <p>
+                    A passionate full stack developer creating responsive, user-friendly and functional web applications using HTML, CSS, JavaScript, and backend technologies.
+                </p>
+
+                <button id="themeBtn">Toggle Theme</button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+
+            <article>
+                <p>
+                    I am a full stack developer intern at DecodeLab who enjoys building modern, responsive, and accessible web applications. I love working on both frontend interfaces and backend functionality.
+                </p>
+            </article>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <h2>Services</h2>
+
+            <div class="service-container">
+
+                <article class="card">
+                    <h3>Full Stack Development</h3>
+                <p>
+                    Building complete web applications using frontend and backend technologies.
+                </p>
+                </article>
+
+                <article class="card">
+                    <h3>Frontend Development</h3>
+                    <p>
+                        Building websites using HTML, CSS and JavaScript.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>UI/UX Design</h3>
+                    <p>
+                        Creating user-friendly digital experiences.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <h3>NotesVault</h3>
+                    <p>Smart note-taking web application.</p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Netflix Clone</h3>
+                    <p>Responsive streaming platform UI.</p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Pong Game</h3>
+                    <p>Interactive JavaScript game project.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <textarea
+                    id="message"
+                    placeholder="Enter your message"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Parul Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
