@@ -93,27 +93,6 @@ project/
 **Parul Sharma**
 
 Full Stack Developer Intern @ DecodeLab
-
----
-
-## 🔗 Live Demo
-
-Add your GitHub Pages link here
-
-Example:
-
-https://your-username.github.io/responsive-portfolio/
-
----
-
-## 📌 GitHub Repository
-
-Add your repository link here
-
-Example:
-
-https://github.com/your-username/responsive-portfolio
-
 ---
 
 ## 📜 License
